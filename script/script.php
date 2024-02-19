@@ -8,7 +8,7 @@ $bad_word = $_GET['text'];
 echo $paragraph;
 
 // Print paragraph lenght
-echo strlen(trim($paragraph));
+echo mb_strlen(trim($paragraph));
 
 // New paragraph
 $new_paragraph = str_replace($bad_word, '***', $paragraph);
